@@ -1,0 +1,11 @@
+html {
+  filter: grayscale(100%);
+}
+.bgc {
+  height: 50px;
+  background: gold;
+}
+.bgc1 {
+  height: 100px;
+  background: fuchsia;
+}

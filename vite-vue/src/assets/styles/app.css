@@ -1,0 +1,13 @@
+.title {
+  color: red;
+  background-color: var(--main-bg-clolr);
+  & span {
+    color: blue;
+  }
+}
+:root {
+  --main-bg-clolr: yellow;
+}
+/* .title span {
+  color: blue;
+} */
