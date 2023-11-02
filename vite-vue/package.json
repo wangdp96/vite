@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.23.2",
+    "@babel/plugin-syntax-decorators": "^7.22.10",
     "vue": "^3.2.47"
   },
   "devDependencies": {

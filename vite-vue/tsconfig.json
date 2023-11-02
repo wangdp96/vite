@@ -25,7 +25,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "src/main.ts"
+    "src/main.ts",
+    "src/components/HelloWorld.js"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

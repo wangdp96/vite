@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.23.2",
+    "@babel/plugin-syntax-decorators": "^7.22.10",
+    "@esbuild/darwin-arm64": "^0.18.20",
+    "quarkd": "^1.0.59",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "wdp-component": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
