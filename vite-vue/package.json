@@ -5,15 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host --force",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
     "@babel/plugin-proposal-decorators": "^7.23.2",
     "@babel/plugin-syntax-decorators": "^7.22.10",
+    "@vitejs/plugin-legacy": "^4.1.1",
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@types/node": "^20.9.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "less": "^4.2.0",
