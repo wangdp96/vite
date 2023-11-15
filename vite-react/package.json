@@ -13,6 +13,7 @@
     "@babel/plugin-proposal-decorators": "^7.23.2",
     "@babel/plugin-syntax-decorators": "^7.22.10",
     "@esbuild/darwin-arm64": "^0.18.20",
+    "quark-ui-rate": "^0.8.0",
     "quarkd": "^1.0.59",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,6 +27,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.3.9"
+    "vite": "^4.3.0"
   }
 }

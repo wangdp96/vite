@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es2015",
+    "module": "es2015",
     "moduleResolution": "node",
     "strict": false,
     "jsx": "react",
@@ -14,7 +14,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "lib": ["esnext", "dom"]
+    "lib": ["es2015", "dom"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**"]

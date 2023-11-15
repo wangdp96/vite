@@ -2,7 +2,15 @@
  * @Author: wdp01015138 wdp01015138@alibaba-inc.com
  * @Date: 2023-10-24 16:06:33
  * @LastEditors: wdp01015138 wdp01015138@alibaba-inc.com
- * @LastEditTime: 2023-11-09 11:36:46
+ * @LastEditTime: 2023-11-10 20:59:31
+ * @FilePath: /vite/vite-vue/src/main.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/*
+ * @Author: wdp01015138 wdp01015138@alibaba-inc.com
+ * @Date: 2023-10-24 16:06:33
+ * @LastEditors: wdp01015138 wdp01015138@alibaba-inc.com
+ * @LastEditTime: 2023-11-09 17:53:11
  * @FilePath: /vite/vite-vue/src/main.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -12,6 +20,7 @@ import App from "./App.vue";
 import "./count.js";
 import { foo } from "./foo.js";
 import { test } from "./app.jsx";
+import { Router } from "./router/router.js";
 
 foo();
 console.log("main module1");
@@ -20,7 +29,7 @@ console.log("main module1");
  foo方法的热更新守卫
 */
 if (import.meta.hot) {
-  import.meta.hot.accept("./foo.js", (newFoo: any) => {
+  import.meta.hot.accept("./foo.js", (newFoo) => {
     if (newFoo.amount.sum > 5) {
       //刷新页面
       import.meta.hot.invalidate();
@@ -35,4 +44,4 @@ if (import.meta.hot) {
   import.meta.hot.decline();
 }
 
-createApp(test).mount("#app");
+createApp(test).use(Router()).mount("#app");

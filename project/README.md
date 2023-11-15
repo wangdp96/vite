@@ -11,7 +11,6 @@ npm run dev
 
 入口文件为 `src/main.tsx`，使用 `vite` 进行开发时的构建，生产使用 `rollup` 进行打包(ESM/UMD)。
 
-
 ## 发布到 npm
 
 如果您想要将当前组件发布到 npm，请在 `package.json` 中配置：
@@ -29,19 +28,19 @@ npm run dev
 ```
 npm run build
 ```
+
 打包后的产出为： `lib/index.js`。
 
 ## 使用产物
 
-您可以在本地登录npm后，在根目录执行 `npm publish`，发布到 `npm` 平台，供他人使用。
-
+您可以在本地登录 npm 后，在根目录执行 `npm publish`，发布到 `npm` 平台，供他人使用。
 
 <img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo2.jpg" />
 
 ### 1、安装
 
 ```javascript
-npm install quark-my-component
+npm install wdp-component
 ```
 
 ### 2、使用
@@ -49,9 +48,15 @@ npm install quark-my-component
 无论是`Vue`，`React`，`Angular`还是`Jq`项目，该组件都可以被使用。
 
 ```js
-import 'quark-my-component/lib/index'
+// react
+import "wdp-component";
 
-<my-component count="0" />
+<my-component count={9}></my-component>;
+
+//vue
+import "wdp-component";
+
+<my-component :count="9"></my-component>
 ```
 
 <img src="https://raw.githubusercontent.com/hellof2e/quark-cli/main/demo.jpg" />

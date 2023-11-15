@@ -21,26 +21,17 @@ export default defineConfig({
       entry: resolve("./src/index.ts"),
       formats: ["es", "cjs"],
       fileName: "index",
+      name: "wdp-component",
     },
     rollupOptions: {
       external: ["quarkc"],
       output: {
         dir: "lib",
+        globals: {
+          quarkc: "Quarkc",
+        },
       },
-      plugins: [
-        typescript(),
-        commonjs(),
-        nodeResolve({
-          extensions,
-          modulesOnly: true,
-        }),
-        babel({
-          babelHelpers: "runtime",
-          exclude: "node_modules/**",
-          extensions,
-        }),
-        filesize(),
-      ],
+      plugins: [typescript()],
     },
   },
 });
